@@ -190,3 +190,65 @@
 # vann:example <> ; # TODO
     vs:term_status   "testing" ;
 .
+
+
+# RuntimeProcess.baseCommand
+:baseCommand
+    rdf:type         rdf:Property ;
+    rdfs:domain      :RuntimeProcess ;
+    rdfs:range       rdf:List ; # e.g. [ "echo" ], or [ "ls", "-l" ].
+
+    rdfs:label       "Base command"@en ;
+    rdfs:comment     "Command that will be executed"@en ;
+    rdfs:isDefinedBy <https://w3id.org/function/vocabulary/implementation> ;
+# vann:example <> ; # TODO
+    vs:term_status   "testing" ;
+.
+
+# RuntimeProcess.platform
+:platform
+    rdf:type         rdf:Property ;
+    rdfs:domain      :RuntimeProcess ;
+    rdfs:range       :Platform ;
+
+    rdfs:label       "Base command"@en ;
+    rdfs:comment     "Command that will be executed"@en ;
+    rdfs:isDefinedBy <https://w3id.org/function/vocabulary/implementation> ;
+# vann:example <> ; # TODO
+    vs:term_status   "testing" ;
+.
+
+
+:Platform
+    rdf:type         owl:Class ;
+    rdfs:label       "Platform"@en ;
+    rdfs:comment     "Platform of the execution environment"@en ;
+    rdfs:isDefinedBy <https://w3id.org/function/vocabulary/implementation> ;
+# vann:example <> ; # TODO
+    vs:term_status   "testing" ;
+.
+
+# Platform.architecture
+:architecture
+    rdf:type         rdf:Property ;
+    rdfs:domain      :RuntimeProcess ;
+    rdfs:range       :Platform ;
+
+    rdfs:label       "Architecture"@en ;
+    rdfs:comment     "Processor architecture (e.g. amd64, arm64, etc.)"@en ;
+    rdfs:isDefinedBy <https://w3id.org/function/vocabulary/implementation> ;
+# vann:example <> ; # TODO
+    vs:term_status   "testing" ;
+.
+
+# Platform.operatingSystem
+:operatingSystem
+    rdf:type         rdf:Property ;
+    rdfs:domain      :RuntimeProcess ;
+    rdfs:range       xsd:string ;
+    rdfs:label       "Operating System"@en ;
+    rdfs:comment     "Operating system of the platform"@en ;
+    rdfs:isDefinedBy <https://w3id.org/function/vocabulary/implementation> ;
+# vann:example <> ; # TODO
+    vs:term_status   "testing" ;
+.
