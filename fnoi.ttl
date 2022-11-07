@@ -180,3 +180,13 @@
 # vann:example <> ; # TODO
     vs:term_status   "testing" ;
 .
+
+:RuntimeProcess
+    rdf:type         owl:Class ;
+    rdfs:subClassOf  fno:Implementation ;
+    rdfs:label       "Runtime Process"@en ;
+    rdfs:comment     "A fno:Implementation of a process that can be executed by a command line tool"@en ;
+    rdfs:isDefinedBy <https://w3id.org/function/vocabulary/implementation> ;
+# vann:example <> ; # TODO
+    vs:term_status   "testing" ;
+.
